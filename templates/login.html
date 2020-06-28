@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+
+{% block heading %}
+Login
+{% endblock %}
+{% block body %}
+<form action="{{ url_for('login_attempt') }}" method = "POST">
+    <div class="form-group">
+        <input type="text" name="username" placeholder="Username">
+    </div>
+    <div class="form-group">
+        <input type="password" name="password" placeholder="Password">
+    </div>
+    <div class="form-group">
+    <button class="btn btn-primary">Login</button>
+    </div>
+</form>
+{% endblock %}

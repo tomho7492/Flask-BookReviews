@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+
+{% block heading %}
+
+{% endblock %}
+
+{% block body %}
+<p>Book Review Tool is a website developed for Harvard's CS50's Web Programming with Python and JavaScript taught by Brian Yu.
+    This tool allows for registered users to search for books, leave reviews for individual books, and see reviews made by 
+    other people. It utilizes a third-party API by Goodreads, to pull in additional ratings. </p>
+    <button class="btn btn-primary" type="button" onclick="window.location.href='login'">Login</button>
+    <button class="btn btn-primary" type="button" onclick="window.location.href='register'">Register</button>
+{% endblock %}

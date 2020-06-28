@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container">
+<ol>
+{% for result in results %}
+<div class=card border-primary mb-3>
+    <div class=card-body>
+<li>
+    <a href="/book/{{result['isbn']}}" class="card-link"> {{result['title']}} by {{result['author'] }} </a> 
+
+    </li>
+</div>
+</div>
+{% endfor %}
+</ol>
+</div>
+{% endblock %}
